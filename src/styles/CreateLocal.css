@@ -1,0 +1,123 @@
+body {
+    background-color: #f0f0f0;
+  }
+  
+  .create-local-page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1%;
+    margin-left: 6%;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .local-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 3%;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .local-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 25px 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .local-card:hover {
+    border-color: #007bff;
+  }
+  
+  .card-info {
+    display: flex;
+    flex: 1;
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    margin-left: 1%;
+  }
+  
+  .info-item h4 {
+    font-size: 16px;
+    font-weight: semi-bold;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #868080;
+  }
+  
+  .info-item p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #000;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .edit-icon {
+    font-size: 40px;
+    color: #808080;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 40px;
+  }
+  
+  .edit-icon:hover {
+    color: #0056b3;
+  }
+  
+  .no-locais-text {
+    color: #868080;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .local-cards-container {
+      margin: 0 2%;
+    }
+  
+    .local-card {
+      align-items: flex-start;
+      padding: 10px 15px;
+      margin-top: 5%;
+    }
+  
+    .card-info {
+      align-items: flex-start;
+    }
+  
+    .info-item {
+      flex-direction: column;
+      margin-left: 3%;
+      align-items: flex-start;
+    }
+  
+    .edit-icon {
+      font-size: 25px;
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  
+    .local-card:hover {
+      border-color: transparent;
+    }
+  }
+  

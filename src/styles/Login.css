@@ -1,0 +1,147 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+
+.login-container {
+  display: flex;
+  height: 100vh; 
+  text-align: center;
+}
+
+.image-container {
+  width: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 80%;
+  height: auto;
+}
+
+.login-box {
+  width: 50%;
+  background-color: #002a6e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1280px) {
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.form {
+  width: 100%;
+  max-width: 450px; 
+}
+
+.form button {
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  border-color: #66b3ff;
+  color: #66b3ff;
+}
+
+
+}
+@media (max-width: 880px) {
+  .image-container {
+    display: none; 
+  }
+
+  .input-conteiner label {
+    margin-left: 10%;
+  }
+
+  .login-box {
+    width: 100%;
+    height: 100vh;
+  }
+
+
+.form {
+  width: 100%;
+  max-width: 430px; 
+}
+
+.form button {
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  border-color: #66b3ff;
+  color: #66b3ff;
+}
+
+}
+
+
+@media (max-width: 500px) {
+  .image-container {
+    display: none; 
+    
+  }
+
+  .login-box {
+    width: 100%;
+    height: 100vh;
+  }
+
+
+.form {
+  width: 80%;
+  max-width: 430px; 
+}
+
+.form button {
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  border-color: #66b3ff;
+  color: #66b3ff;
+}
+
+}
+
+
+
+
+

@@ -1,0 +1,120 @@
+body {
+  background-color: #f0f0f0; 
+}
+
+.main-content {
+  flex: 1; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+}
+
+.user-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 4%;
+  flex: 1; 
+  overflow-y: auto;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between; 
+  background-color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.user-card:hover {
+  border-color: #007bff;
+}
+
+.card-info {
+  display: flex;
+  flex: 1;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column; /* Por padrão, organiza como coluna */
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+  margin-left: 1%;
+}
+
+.info-item h4 {
+  font-size: 16px;
+  font-weight: semi-bold;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #868080;
+}
+
+.info-item p {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #000;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.edit-icon {
+  font-size: 40px;
+  color: #808080;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-right: 40px;
+}
+
+.edit-icon:hover {
+  color: #0056b3;
+}
+
+.no-users-text {
+  color: #868080;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .user-cards-container {
+    margin: 0 2%; /* Reduzindo a margem lateral */
+  }
+
+  .user-card {
+    align-items: flex-start;
+    padding: 10px 15px; 
+    margin-top: 5%;
+  }
+
+  .card-info {
+    align-items: flex-start; 
+    
+  }
+
+  .info-item {
+    flex-direction: column; /* Altere para coluna apenas em telas pequenas */
+    margin-left: 3%;
+    align-items: flex-start; /* Alinha à esquerda */
+  }
+
+  .edit-icon {
+    font-size: 25px; /* Reduz o tamanho do ícone */
+    margin-right: 0; /* Remove a margem direita extra */
+    margin-top: 10px; /* Dá espaço entre o conteúdo e o ícone */
+  }
+
+  .user-card:hover {
+    border-color: transparent; /* Remove a mudança de cor ao hover */
+  }
+}

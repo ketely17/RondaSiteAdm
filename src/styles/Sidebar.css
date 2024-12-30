@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.sidebar {
+  width: 80px; 
+  background-color: #00264d;
+  color: white;
+  height: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  transition: width 0.3s ease-in-out; 
+  z-index: 999;
+  
+}
+
+.sidebar.open {
+  width: 250px; 
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out, padding 0.3s ease-out; 
+  position: relative;
+}
+
+.sidebar li:nth-child(3)::after {
+  content: "";
+  display: block;
+  width: 80%; 
+  height: 1px; 
+  background-color: white; 
+  position: absolute;
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+.sidebar.open li {
+  justify-content: flex-start; 
+  padding-left: 20px; 
+}
+
+.sidebar li:hover {
+  background-color: #004080; 
+}
+
+.sidebar li span {
+  display: none; 
+  font-size: 15px;
+  margin-left: 10px;
+  white-space: nowrap; 
+}
+
+.sidebar.open li span {
+  display: inline-block;
+} 
+
+.sidebar.closed li {
+  justify-content: center; 
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff; 
+  padding: 15px;
+}
+
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #123465; 
+  color: #fff;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #007bff; 
+}
+
+
+.main-content {
+  margin-left: 80px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.main-content.sidebar-open {
+  margin-left: 250px;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .sidebar.open {
+    width: 250px; 
+  }
+
+  .sidebar ul {
+    display: none; 
+  }
+
+  .sidebar.open ul {
+    display: block; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}

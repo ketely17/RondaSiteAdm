@@ -1,0 +1,14 @@
+.time-picker{
+    
+    display: flex;
+    margin: 1em;
+    
+}
+.time-picker__select{
+    width: 5em;
+    height: 3em;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    border-radius: 0.3em;
+}
