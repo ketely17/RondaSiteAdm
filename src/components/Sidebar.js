@@ -15,25 +15,25 @@ const Sidebar = ({ isOpen, onLogout }) => {
        
         <li>
           <Link to="/user-management">
-            <FaUserPlus className="menu-icon"/>
+            <FaUserPlus className="menuu-icon"/>
             <span>{isOpen && "Criar Usuário"}</span>
           </Link>
         </li>
         <li>
           <Link to="/create-local">
-            <FaHome className="menu-icon"/>
+            <FaHome className="menuu-icon"/>
             <span>{isOpen && "Criar Local"}</span>
           </Link>
         </li>
         <li>
         <Link to="/create-rota">
-          <FaRoute className="menu-icon"/>
+          <FaRoute className="menuu-icon"/>
           <span>{isOpen && "Criar Rota"}</span>
           </Link>
         </li>
         <li>
         <Link to="/Registros">
-          <FaBook className="menu-icon"/>
+          <FaBook className="menuu-icon"/>
           <span>{isOpen && "Consultar Registros"}</span>
           </Link>
         </li>

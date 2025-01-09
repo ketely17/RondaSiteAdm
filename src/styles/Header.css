@@ -29,7 +29,7 @@
   color: white;
   font-size: 30px;
   cursor: pointer;
-  transition: transform 0.3s ease; /* Transição suave no clique */
+  transition: transform 0.3s ease;
   margin-right: 1%;
   margin-left: -6px;
 }

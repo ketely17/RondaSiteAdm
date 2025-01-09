@@ -45,9 +45,10 @@ const FormLocal = ({ onSubmit, initialData }) => {
       <h1 className="h2-4">Adicione um local</h1>
       <form className="formei" onSubmit={handleSubmit}>
         <label className="loginn-texto">
-          <FaMapMarkerAlt className="formei-icon" /> Nome do local
+          Nome do local
         </label>
         <div className="inputi-box">
+        <FaMapMarkerAlt className="formei-icon" />
           <input
             type="text"
             name="nomeLocal"

@@ -1,0 +1,46 @@
+.selecte-box {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o select e o botão */
+  }
+  
+  .selecte-box select {
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    color: #fff;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .selecte-box select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  .foremei-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #123465;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .foremei-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5);
+  }

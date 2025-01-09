@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/Registros.css'
 
 
 
@@ -12,10 +13,10 @@ export default function SelectGeneratorUser({list,setSelectedUser}) {
         setSelectedUser(optionId)
     }
   return (
-    <div className='selectDiv'>
+    <div className=''>
         <select onChange={(event)=>{
             onChangeSet(event)
-        }} className="select-generator">
+        }} className="data">
         <option value="" disabled selected>
           Selecione o Usuário
         </option>
