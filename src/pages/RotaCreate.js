@@ -37,7 +37,7 @@ const RotaCreate = () => {
       console.error("Erro ao deletar rota:", error);
     }
   };
-  
+
   useEffect(() => {
     loadRotasFromStorage();
     loadLocaisFromStorage();
@@ -70,10 +70,10 @@ const RotaCreate = () => {
                   <h4>Horário:</h4>
                   <p>{rota.horarioInicio}</p>
                 </div>
-                <FaTrash 
-                  className="delete-icon" 
-                  onClick={() => deleteRota(rota.id)} 
-                  style={{ cursor: "pointer", color: "red" }} 
+                <FaTrash
+                  className="delete-icon"
+                  onClick={() => deleteRota(rota.id)}
+                  style={{ cursor: "pointer", color: "red" }}
                 />
               </div>
             </div>

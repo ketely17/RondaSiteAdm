@@ -6,7 +6,7 @@ import "../styles/CreateLocal.css";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import userPrint from "../hooks/userPrint";
-import style from "../styles/localsStyle"
+import style from "../styles/localsStyle";
 import PrintLocal from "../components/PrintLocal";
 
 const CreateLocal = () => {
@@ -14,8 +14,8 @@ const CreateLocal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const print = async (idLocal) => {
-    //Variavel que recebe o retorno do Hook passando o componente junto com ID para geração do QRCode  
-    const content = await userPrint(<PrintLocal idLocal={idLocal}/>);
+    //Variavel que recebe o retorno do Hook passando o componente junto com ID para geração do QRCode
+    const content = await userPrint(<PrintLocal idLocal={idLocal} />);
     //Cria a janela de impressâo
     const windows = window.open();
     //Cria no documento estrutura basica de funcionamento HTML para impressao
@@ -31,19 +31,9 @@ const CreateLocal = () => {
     //Define o fechamento da estrutura HTML para impressao
     await windows.document.write("</html>");
 
-
-
-
-    windows.print()
+    windows.print();
     //Chama a ação de print da pagina
-    
   };
-
-
-
-
-
-
 
   // Carrega locais da API
   const loadLocaisFromStorage = async () => {
@@ -87,14 +77,14 @@ const CreateLocal = () => {
                   <p>{local.idLocal}</p>
                 </div>
                 <div>
-                  
-                  <button onClick={()=>{
-                    print(local.idLocal)
-                  }}>
+                  <button
+                    onClick={() => {
+                      print(local.idLocal);
+                    }}
+                  >
                     Gerar QrCode
-                  
-                  
-                  </button></div>
+                  </button>
+                </div>
               </div>
             </div>
           ))

@@ -53,6 +53,7 @@
   bottom: 0; 
   left: 50%; 
   transform: translateX(-50%); 
+  transition: step-end 5s;
 }
 
 .sidebar.open li {
